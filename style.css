@@ -31,7 +31,10 @@ video {
   position: fixed;
   left: 0;
   top: 0;
-
+  height: 100vh;
+  width: 100vw;
+  background: rgba(25, 0, 25, 0.35);
+  z-index: 1;
 }
 
 /* Container */
@@ -132,6 +135,7 @@ li span {
 
   video {
     object-fit: cover;
+    object-position: 28%;
     margin-top: -1px;
   }
 
