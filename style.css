@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -8,7 +10,7 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
-
+  font-family: Poppins, sans-serif;
 }
 
 /* Video Background */
@@ -48,12 +50,14 @@ video {
   z-index: 2;
   display: flex;
   justify-content: center;
-
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .input-container {
-  position: relative;
-  top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -81,6 +85,7 @@ input {
   border-radius: 20px;
   background: #fff;
   outline: none;
+  font-family: Poppins, sans-serif;
 
 }
 
@@ -92,13 +97,18 @@ button {
   margin-top: 15px;
   border: none;
   text-transform: uppercase;
-  background: #006959;
+  background: #7357b3;
   color: white;
   cursor: pointer;
   outline: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: Poppins, sans-serif;
 }
 
-
+button:hover {
+  filter: brightness(110%);
+}
 
 /* Countdown */
 ul {
@@ -140,7 +150,8 @@ li span {
   }
 
   .container {
-
+    min-width: unset;
+    width: 95vw;
     min-height: 245px;
     padding: 20px;
     margin: 10px;
